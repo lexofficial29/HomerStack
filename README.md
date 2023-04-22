@@ -37,5 +37,5 @@ The validation function checks each row of the input matrix to see if that perso
 
     git clone https://github.com/lexofficial29/HomerStack.git
     cd HomerStack
-    g++ homer.cpp -o homer
-    ./homer
+    g++ main.cpp -o main
+    ./main
