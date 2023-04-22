@@ -1,8 +1,7 @@
 # 🚀 The Homer Problem Challenge 🤔
 
 This project is a solution to the Homer problem where we have to identify a person, Homer, who didn't interact with anyone in an event. 
-
-**The challenge is to solve the problem using a stack data structure.**
+**The challenge is to solve the problem by using a stack data structure.**
 
 # 📝 The Problem
 
@@ -28,7 +27,11 @@ the solution.
 
 # 💻 The Solution
 
-We use a stack data structure to store the number of people each person interacted with. We then pop the stack until we find a person who didn't interact with anyone, which is likely to be Homer. We then validate if everyone interacted with this person, if yes, then we have identified Homer, otherwise, Homer didn't show up at the event.
+The solution to this problem involves using a stack to keep track of how many people each person interacted with. We read the input matrix from a file and for each row, we count how many interactions that person had and push that count onto the stack. If we encounter a row with zero interactions, we know that person must be Homer.
+
+Next, we pop elements from the stack until we find the person who had zero interactions. We then pass the index of that person along with the input matrix and two empty stacks to a validation function.
+
+The validation function checks each row of the input matrix to see if that person interacted with every other person. If they did, we print a message saying that Homer attended the event. Otherwise, we print a message saying that he did not attend.
 
 # 🚀 Quick Start
 
