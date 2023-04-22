@@ -1,4 +1,4 @@
-# 🚀 The Homer Problem 🤔
+# 🚀 The Homer Problem Challenge 🤔
 
 This project is a solution to the Homer problem where we have to identify a person, Homer, who didn't interact with anyone in an event. 
 
